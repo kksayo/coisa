@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite('resources/css/app.css')
-
-    <title>Chipi Chipi Chapa Chapa</title>
-</head>
-<body>
+<x-layout_base>
 <div>
-<button class="btn">Button</button>
-<button class="btn btn-neutral">Neutral</button>
-<button class="btn btn-primary">Primary</button>
-<button class="btn btn-secondary">Secondary</button>
-<button class="btn btn-accent">Accent</button>
-<button class="btn btn-ghost">Ghost</button>
-<button class="btn btn-link">Link</button>
+<div claas="absolute"><img src="https://cdn.meutimao.com.br/_upload/wallpapers/corinthians_em_widescreen_e_alta_definicao_tw_1600x900.jpg">
 </div>
-
-</body>
-</html>
+</x-layout_base>
