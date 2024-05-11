@@ -3,22 +3,20 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Produto;
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/1', function () {
     return view('home');
 });
 
-Route::get('/2', function () {
-    return view('Teste1');
+Route::get('/', function () {
+    $listaProdutos = Produto::all();
+    return view('home', compact('listaProdutos'));
 });
 
-Route::get('/3', function () {
-    return view('cria-conta');
-});
+Route::view('/1','cria-conta');
+
+Route::view('/2','teste1');
 
 Route::post('/salva-usuario',function(Request $request){
     
@@ -32,6 +30,3 @@ Route::post('/salva-usuario',function(Request $request){
     dd("Salvo com sucesso");
 
 })->name('salva-usuario');
-
-
-
