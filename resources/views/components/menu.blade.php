@@ -27,7 +27,7 @@
 </div>
 
 
-<div class="navbar bg-red-300">
+<div class="navbar bg-red-300 position: sticky top-0 z-10">
   <div class="navbar-start text-black text-xl ml-10">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -50,7 +50,7 @@
       <li><a>Moda</a></li>
     </ul>
     </div>
-    <a class="btn btn-ghost text-xl"></a>
+    <a class="btn btn-ghost text-xl "></a>
   </div>
   <div class="navbar-center hidden z-40 lg:flex bg-red-300 text-black">
     <ul class="menu menu-horizontal px-1">
