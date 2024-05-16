@@ -2,8 +2,8 @@
   <div class="flex-1">
     <a class="btn btn-ghost text-black text-xl">Carros Market</a>
   </div>
-  <div class="flex-none gap-3">
-    <div class="form-control mr-[20rem] w-[64rem]">
+  <div class="flex-none gap-3 justify-center">
+    <div class="form-control mr-[12rem] w-[64rem]">
       <input type="text" placeholder="Search" class="input input-bordered md:w-auto bg-red-100" />
     </div>
     <div class="dropdown dropdown-end">
