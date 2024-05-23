@@ -18,6 +18,8 @@ Route::view('/1','cria-conta');
 
 Route::view('/2','teste1');
 
+Route::view('/3','Cadastra-produto');
+
 Route::post('/salva-usuario',function(Request $request){
     
     // dd($request);
