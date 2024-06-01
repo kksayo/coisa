@@ -1,5 +1,6 @@
 <x-layout_base>
-<div>
-<div claas="absolute"><img src="https://cdn.meutimao.com.br/_upload/wallpapers/corinthians_em_widescreen_e_alta_definicao_tw_1600x900.jpg">
+<div class="absolute text-black bg-gradient-to-r from-yellow-500 to-white w-screen h-screen">
+
+
 </div>
 </x-layout_base>

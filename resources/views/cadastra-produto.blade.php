@@ -1,33 +1,29 @@
 <x-layout_base>
-<div class="bg-[url('https://obarquinhocultural.files.wordpress.com/2015/07/minions-wallpaper-4.jpg')] bg-no-repeat bg-cover bg-center h-screen">
+<div class="bg-[url('https://cdn.discordapp.com/attachments/1217499749666652211/1246294341970956419/image.png?ex=665bdd8e&is=665a8c0e&hm=4d8377e9e9ce0c406a46a96f7a11dd873856fff45e0874394abb6fa5a6c6c889&')] bg-no-repeat bg-cover bg-center h-screen w-screen">
 
 
 <!-- Main modal -->
 
-<div id="updateProductModal" tabindex="-1" class="overflow-y-auto overflow-x-hidden z-10 justify-center items-center flex pt-20">
+<div id="updateProductModal" tabindex="-1" class="overflow-y-auto overflow-x-hidden z-10 justify-center items-center flex pt-[10rem]">
     <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
         <!-- Modal content -->
-        <div class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
+        <div class="relative p-4 bg-white rounded-lg bg-gradient-to-b from-red-200 via-blue-200 to-green-200 sm:p-5">
             <!-- Modal header -->
-            <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+            <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-800">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-800">
                     Update Product
                 </h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="updateProductModal">
-                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    <span class="sr-only">Close modal</span>
-                </button>
             </div>
             <!-- Modal body -->
             <form action="#">
                 <div class="grid gap-4 mb-4 sm:grid-cols-2">
                     <div>
-                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nome do produto</label>
-                        <input type="text" name="name" id="name" value="iPad Air Gen 5th Wi-Fi" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Ex. Apple iMac 27&ldquo;">
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Nome do produto</label>
+                        <input type="text" name="name" id="name" value="iPad Air Gen 5th Wi-Fi" class="bg-gray-50 border border-gray-800 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  bg-transparent dark:border-gray-800 dark:placeholder-gray-400 dark:text-gray-800 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Ex. Apple iMac 27&ldquo;">
                     </div>
                     <div>
-                        <label for="Price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Preço do produto</label>
-                        <input type="number" value="399" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="$299">
+                        <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Preço do produto</label>
+                        <input type="number" value="399" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-transparent dark:border-gray-800 dark:placeholder-gray-400 dark:text-gray-800 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="$299">
                     </div>
                     <div>
 
@@ -38,7 +34,7 @@
                 <path fill-rule="evenodd" d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2z"/>
                 <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
               </svg>
-              <span class="mt-2 block text-sm text-gray-800 dark:text-neutral-200">
+              <span class="mt-2 block text-sm text-gray-800 dark:text-gray-8000">
                 Faça upload dos seus arquivos <span class="group-hover:text-blue-700 text-blue-600">Clicando aqui</span>
               </span>
               <span class="mt-1 block text-xs text-gray-500 dark:text-neutral-500">
@@ -49,8 +45,8 @@
 
 
                     <div class="sm:col-span-2">
-                        <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Descrição do produto</label>
-                        <textarea id="description" rows="5" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Write a description...">Standard glass, 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US</textarea>                    
+                        <label for="descricao" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Descrição do produto</label>
+                        <textarea id="descricao" rows="5" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-800 focus:ring-primary-500 focus:border-primary-500 bg-transparent dark:border-gray-800 dark:placeholder-gray-400 dark:text-gray-800 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Write a description...">Standard glass, 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory, Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage, Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US</textarea>                    
                     </div>
                 </div>
                 <div class="flex items-center space-x-4">

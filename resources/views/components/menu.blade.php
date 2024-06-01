@@ -12,15 +12,19 @@
         <img alt="Tailwind CSS Navbar component" src="https://recreio.uol.com.br/media/uploads/2024/02/mate-carros_capa.jpg" />
         </div>
       </div>
-      <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content text-black rounded-box w-52 bg-red-300">
+      <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content text-black rounded-box w-52 bg-red-300 z-20">
         <li>
-          <a class="justify-between bg-red-300">
+          <a class="justify-between bg-red-300 hover:bg-red-200">
             Profile
             <span class="badge">New</span>
           </a>
         </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+        <li><a class="justify-between bg-red-300 hover:bg-red-200">
+            Settings</a></li>
+
+            <li><a class="justify-between bg-red-300 hover:bg-red-200">
+            Logout</a></li>
+
       </ul>
     </div>
   </div>
