@@ -18,8 +18,6 @@ Route::view('/1','cria-conta');
 
 Route::view('/2','teste1');
 
-Route::view('/3','Cadastra-produto');
-
 Route::post('/salva-usuario',function(Request $request){
     
     // dd($request);
@@ -32,3 +30,28 @@ Route::post('/salva-usuario',function(Request $request){
     dd("Salvo com sucesso");
 
 })->name('salva-usuario');
+
+Route::view('/3','Cadastra-produto');
+
+Route::post('/salva-produto',function (Request $request){
+
+    // dd($request);
+
+    $produto = new Produto();
+    $produto->name = $request->name;
+    $produto->valor = $request->valor;
+    $produto->descricao = $request->descricao;
+
+    $file = request()->file('foto');
+
+    $foto = $file->store('produtos', ['disk' => 'fotos']);
+
+    $produto->foto = $foto;
+
+    $produto->user_id = 1;
+
+
+    $produto->save();
+    dd("Salvo com sucesso");
+
+    })->name('salva-produto');
