@@ -14,9 +14,9 @@ Route::get('/', function () {
     return view('home', compact('listaProdutos'));
 });
 
-Route::view('/1','cria-conta');
+Route::view('/register','cria-conta');
 
-Route::view('/2','teste1');
+Route::view('/login','login')->name("login");
 
 Route::post('/salva-usuario',function(Request $request){
     
@@ -27,11 +27,13 @@ Route::post('/salva-usuario',function(Request $request){
     $usuario->email = $request->email;
     $usuario->password = $request->senha;
     $usuario->save();
-    dd("Salvo com sucesso");
+    //dd("Salvo com sucesso");
+
+    return redirect ('/login');
 
 })->name('salva-usuario');
 
-Route::view('/3','Cadastra-produto');
+Route::view('/pregister','Cadastra-produto')->middleware('auth');
 
 Route::post('/salva-produto',function (Request $request){
 
@@ -52,6 +54,44 @@ Route::post('/salva-produto',function (Request $request){
 
 
     $produto->save();
-    dd("Salvo com sucesso");
 
-    })->name('salva-produto');
+     //dd("Salvo com sucesso");
+    return redirect('/');
+   
+
+    })->name('salva-produto')->middleware('auth');
+
+    Route::post('/logar', function (Request $request) {
+        
+        // dd($request);
+
+        $credentials = $request->validate([
+
+            'email' => ['required', 'email'], //verifica se tem enail e se é email
+            
+            'senha' => ['required'], //verifica se tem senha
+            
+            ]);
+            
+            //compara se os dados no banco de dados são iguais o que ele preenchau
+            
+            If (Auth::attempt(['email' => $request->email, 'password' => $request->senha])) {
+            
+            //cria a sessão do usuário logado
+            
+            $request->session()->regenerate();
+            
+            //redireciona para a tela de cadastro de produtos
+            
+            return redirect()->intended('/');
+            }
+            else{
+                    dd("Usuário ou senha incorretos");
+            }
+
+    })->name('logar');
+
+    Route::get('sair', function () {
+        Auth::logout();
+            return redirect ('/');
+    });

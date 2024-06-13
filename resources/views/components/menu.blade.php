@@ -6,27 +6,30 @@
     <div class="form-control mr-[12rem] w-[64rem]">
       <input type="text" placeholder="Search" class="input input-bordered md:w-auto bg-red-100" />
     </div>
+    @auth
     <div class="dropdown dropdown-end">
       <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
         <div class="w-10 rounded-full">
         <img alt="Tailwind CSS Navbar component" src="https://recreio.uol.com.br/media/uploads/2024/02/mate-carros_capa.jpg" />
         </div>
       </div>
-      <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content text-black rounded-box w-52 bg-red-300 z-20">
+      <ul tabindex="0" class="mt-3 z-1 p-2 shadow menu menu-sm dropdown-content text-black rounded-box w-52 bg-red-300 z-20">
         <li>
           <a class="justify-between bg-red-300 hover:bg-red-200">
-            Profile
-            <span class="badge">New</span>
+            Perfil
+            <span class="badge">Em breve!</span>
           </a>
         </li>
-        <li><a class="justify-between bg-red-300 hover:bg-red-200">
-            Settings</a></li>
+        <li><a class="justify-between bg-red-300 hover:bg-red-200" href="/pregister">
+            Cadastrar produto</a></li>
 
-            <li><a class="justify-between bg-red-300 hover:bg-red-200">
+            <li><a class="justify-between bg-red-300 hover:bg-red-200" href="/sair">
             Logout</a></li>
 
       </ul>
     </div>
+    @else<a href="/login">Entrar</a>
+    @endauth
   </div>
 </div>
 
